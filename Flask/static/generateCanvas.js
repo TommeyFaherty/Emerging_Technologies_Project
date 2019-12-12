@@ -5,14 +5,18 @@ var canvas, ctx, flag = false,
                 currY = 0,
                 dot_flag = false;
 
-            var x = "black",
-                y = 2;
+            var x = "white",
+                y = 10;
 
             function init() {
                 canvas = document.getElementById('can');
                 ctx = canvas.getContext("2d");
                 w = canvas.width;
                 h = canvas.height;
+
+                //Fill in black background of canvas
+                ctx.fillStyle = "black"
+                ctx.fillRect(0, 0, w, h);
 
                 canvas.addEventListener("mousemove", function (e) {
                     findxy('move', e)
@@ -86,12 +90,13 @@ var canvas, ctx, flag = false,
 
                 e.preventDefault();
                 
-                //print(canvas);
-                
                 var dataURL = canvas.toDataURL();
 
+                //print image data
+                //console.log(dataURL)
+
                 //Send AJAX request
-                $.post("/predict", {"canvasAsImage": dataURL}, 
+                $.post("/prediction", {"canvasAsImage": dataURL}, 
                 function(data){
                     
                     //Update text area with predicted number
