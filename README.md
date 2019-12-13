@@ -29,6 +29,7 @@ When creating the model I used the **Conv2D** layer to create a convolutional ke
 
 ### MaxPooling2D
 I used the **MaxPooling2D** to downscale the input in spacial dimension. I entered a pool_size of (2,2) to halve the horizontal and veritcal spacial dimensions.
+
 *pool_size* - factors by which to downscale.(2, 2) will halve the input in both spatial dimension
 
 ### Flatten
