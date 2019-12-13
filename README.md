@@ -1,4 +1,4 @@
-"# Emerging_Technologies_Project" 
+# Emerging_Technologies_Project
 ## Create conda enviornment
 
 conda create --name <environment name>
