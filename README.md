@@ -21,6 +21,7 @@ python FlaskApp.py
 In the model I have taken images from the mnist data set to train a neural network on recognising numbers from images.
 
 When creating the model I used the **Conv2D** layer to create a convolutional kernel that is combined with the layer input to produce a tensor of outputs.
+
 *filters* -  the number of output filters in the convolution
 *kernel_size* - specifies the height and width of the 2D convolution window. 
 	Can be a single integer to specify the same value for all spatial dimensions.
