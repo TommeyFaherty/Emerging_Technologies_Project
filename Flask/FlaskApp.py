@@ -37,7 +37,6 @@ def prediction():
 
     greyImg = greyImg.resize([28,28])
     img_pil = image.img_to_array(greyImg)
-    #img_pil = img_pil.resize(28, 28)
 
     img_array = (img_pil.flatten())
     img_array = img_array.reshape(1, 28, 28, 1)
