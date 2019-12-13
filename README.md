@@ -1,11 +1,11 @@
 # Emerging_Technologies_Project
 ## Create conda enviornment
 
-conda create --name <environment name>
+conda create --name '<environment name>'
 
 ## Run enviornment
 
-conda activate <environment name>
+conda activate '<environment name>'
 
 ## Install requirements.txt
 
